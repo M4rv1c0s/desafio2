@@ -1,0 +1,219 @@
+/*!
+    Title: Dev Portfolio Template
+    Version: 1.2.2
+    Last Change: 03/25/2020
+    Author: Ryan Fitzgerald
+    Repo: https://github.com/RyanFitzgerald/devportfolio-template
+    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
+
+    Description: This file contains all the styles associated with the page
+    that don't come from third party libraries. This file gets compiled using
+    Gulp and send to the /css folder which is then loaded on the page.
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+font-size: 16px;
+}
+
+.contenedor{
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+/*.portafolio{
+  background:#f2f2f2;
+}*/
+.titulo{
+  font-size: 50px;
+  text-align: center;  
+}
+
+.contenedor-sobre-nosotros{
+  display:flex;
+  justify-content: space-evenly;
+  background-color: #9e9797;
+}
+
+.sobre-nosotros .contenido-textos{
+  width: 100%;
+}
+.contenido-textos{
+  text-align: justify;
+  padding: 35px 15px 35px 15px;
+
+}
+.about-services{
+  background:#f2f2f2;
+  padding-bottom: 30px;
+}
+
+.servicio-cont{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.servicio-ind{
+  width:28%;
+  text-align:center;
+}
+
+.servicio-ind img{
+  width: 90%;
+}
+.servicio-ind h3{
+  margin: 10px 0;
+}
+.servicio-ind p{
+  font-weight: 300;
+  text-align: justify;
+}
+footer{
+  background:#414141;
+  padding: 60px 0 30px 0;
+  margin:auto;
+  overflow:hidden;
+}
+.contenedor-footer{
+  display:flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.content-foo{
+  text-align:center;
+}
+
+.content-foo h4{
+  color:#fff;
+  border-bottom: 2px solid #af20d3;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+.content-foo p{
+  color:#ccc;
+}
+.titulo-final{
+  text-align:center;
+  font-size: 24px;
+  margin:20px 0 0 0;
+  color: #9e9797;
+}
+
+  /*text-align: center;
+  font-size: 56px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}*/
+
+
+header{ 
+     
+    /*border: 1px solid #ced6e0;*/
+}
+
+header nav{
+    height: 70px;
+    background:#9e9797;
+    display: flex;
+    justify-content: space-between;
+}
+.enlaces{
+  display: flex;
+  height:100%;
+  width:30%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.enlaces a{ 
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  padding: 4px 0;
+  transition: 0.7s ease-out;
+  color: #fff;
+  text-decoration: none;
+}
+.enlaces a:hover, .active{ 
+  border-top: 1px solid coral;
+  border-bottom: 1px solid coral;
+}
+
+
+@media screen and (max-width: 900px){
+  header{
+    background-position: center;
+  }
+
+  
+.contenedor-sobre-nosotros{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sobre-nosotros .contenido-textos{
+  width:90%
+}
+/*.cards{
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+.cards .card{
+  width:90%
+}
+.cards .card:firts-child{
+  margin-bottom:30px;
+}*/
+.servicio-cont{
+  justify-content: center;
+  flex-direction:column;
+}
+.servicio-ind{
+  width:100%;
+  text-align:center;
+}
+}
+
+@media screen and (max-width:500px){
+  nav{ text-align: center;
+  padding:30px 0 0 0;
+}
+  nav > a {
+    margin-right:5px;
+  }
+.textos h1{
+  font-size:35px;
+}
+
+.textos h1 > a{
+  font-size:35px;
+}
+.contenedor-footer{
+  flex-direction:column;
+  border:none;
+}
+.content-foo{
+  margin-bottom:20px;
+  text-align:center;
+}
+.content-foo h4{
+  border-bottom:0px none;
+}
+.content-foo p{
+  color:#ccc;
+  border-bottom:1px solid #f2f2f2;
+  padding-bottom:20px;
+}
+}
+
+
